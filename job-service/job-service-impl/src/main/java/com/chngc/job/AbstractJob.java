@@ -88,7 +88,7 @@ public abstract class AbstractJob implements Job {
         if (!canStart) {
             jobLog.setEndTime(new Date());
             jobLog.setSysStatus(SysJobLog.SYS_STATUS_ERROR);
-            jobLog.setMessage("不允许并发执行");
+            jobLog.setMessage("不允许并发执行1");
         } else {
             jobLog.setSysStatus(0);
         }
